@@ -1,6 +1,6 @@
 .notes {
   margin: 2% auto;
-  width: 70vw;
+  width: 80vw;
 
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -12,4 +12,5 @@
   justify-items: stretch;
   justify-content: stretch;
   align-items: stretch;
+  margin: auto;
 }
