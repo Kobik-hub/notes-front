@@ -6,7 +6,7 @@
   //   text-align: center;
   //   justify-content: center;
   form {
-    min-height: 80vh;
+    min-height: 60vh;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -65,7 +65,12 @@
 
 /* If screen size is 600px wide, or less, set the font-size of <div> to 30px */
 @media screen and (max-width: 700px) {
-  .login input {
-    font-size: 5vw;
+  .login {
+    input {
+      font-size: 5vw;
+    }
+    form {
+      min-height: 40vh;
+    }
   }
 }
