@@ -1,0 +1,70 @@
+.note {
+  border-radius: 2rem;
+  // margin: 2rem auto;
+
+  .note-title {
+    // position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 20vh;
+    width: 100%;
+
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8);
+
+    letter-spacing: 2px;
+    border-radius: 2rem;
+    // height: 20vh;
+
+    // width: 15vw;
+    background-color: #dbf6e9;
+  }
+  .note-content {
+    height: 20vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    // height: 20vh;
+    // width: 15vw;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8);
+
+    border-top-right-radius: 2rem;
+    border-radius: 2rem;
+    background: #9ddfd3;
+  }
+  .delete-icon {
+    // // position: absolute;
+    // bottom: 2%;
+    // right: 0%;
+
+    cursor: pointer;
+    font-size: 2rem;
+    position: absolute;
+    right: 4%;
+    top: 3%;
+    stroke: black;
+    stroke-width: 30px;
+  }
+  h4 {
+    font-size: 3vh;
+    text-align: center;
+    color: #141e30;
+  }
+  p {
+    text-align: center;
+    font-size: 2vh;
+    color: #141e30;
+  }
+}
+
+// @media only screen and (min-width: 1200px) {
+//   .note-title,
+//   .note-content {
+//     min-height: 30vh;
+//     min-width: 30vh;
+//   }
+// }

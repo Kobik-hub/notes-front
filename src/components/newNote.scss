@@ -1,0 +1,70 @@
+.new-note {
+  margin: 3% auto 5% auto;
+
+  height: 30vh;
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  //   background-color: yellow;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8);
+  border-radius: 3rem;
+  background-color: #dbf6e9;
+
+  label {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  .title,
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+    width: 20vw;
+    // margin: 0 auto;
+    input {
+      font-size: 2rem;
+    }
+    textarea {
+      height: 10vh;
+      font-size: 2rem;
+    }
+  }
+  button {
+    // background-color: #dbf6e9;
+    background: linear-gradient(to right, #243b55, #141e30);
+    height: 10vh;
+    width: 100%;
+    cursor: pointer;
+    border: none;
+
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+  }
+  h2 {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  @media only screen and (max-width: 1200px) {
+    width: 50vw;
+    .title,
+    .content {
+      width: 40vw;
+    }
+  }
+
+  @media only screen and (max-width: 700px) {
+    width: 60vw;
+    .title,
+    .content {
+      width: 40vw;
+    }
+  }
+}
