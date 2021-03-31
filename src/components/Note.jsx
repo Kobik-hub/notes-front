@@ -29,12 +29,12 @@ const Note = ({ title, content, notes, setNotes, date }) => {
         isFlipped={isFlipped}
         flipDirection="vertical"
       >
-        <div className="note-title" onMouseEnter={() => setIsFlipped(true)}>
+        <div className="note-title" onClick={() => setIsFlipped(true)}>
           <h4>{title}</h4>
           <p>{date}</p>
         </div>
 
-        <div className="note-content" onMouseLeave={() => setIsFlipped(false)}>
+        <div className="note-content" onClick={() => setIsFlipped(false)}>
           <FontAwesomeIcon
             icon={faTimes}
             onClick={deleteNoteHandler}

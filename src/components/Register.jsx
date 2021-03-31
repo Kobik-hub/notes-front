@@ -30,6 +30,7 @@ const Register = ({ setIsLoggedIn, props }) => {
   const RegisterHandler = async (e) => {
     e.preventDefault();
     try {
+      console.log(process.env.REACT_APP_API_URL);
       const jwt = await axios.post(
         process.env.REACT_APP_API_URL + "/api/users",
         {

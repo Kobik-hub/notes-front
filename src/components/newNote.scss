@@ -1,7 +1,7 @@
 .new-note {
   margin: 3% auto 5% auto;
-
-  height: 40vh;
+  position: relative;
+  height: 60vh;
   width: 30vw;
   display: flex;
   flex-direction: column;
@@ -50,14 +50,18 @@
     font-weight: bold;
     border-bottom-left-radius: 2rem;
     border-bottom-right-radius: 2rem;
+    align-self: flex-end;
+    position: absolute;
+    bottom: 0%;
   }
   h2 {
     font-size: 3rem;
     margin-bottom: 3rem;
   }
 
-  @media only screen and (max-width: 1300px) {
+  @media only screen and (max-width: 1000px) {
     width: 50vw;
+    height: 60vh;
 
     .title,
     .content {
@@ -65,13 +69,12 @@
     }
   }
 
-  @media only screen and (max-width: 700px) {
-    width: 65vw;
-
+  @media only screen and (max-width: 600px) {
+    height: 70vh;
+    width: 70vw;
     .title,
     .content {
-      width: 40vw;
-      height: 80vh;
+      width: 50vw;
     }
   }
 }
